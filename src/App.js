@@ -1,11 +1,12 @@
 import './App.css';
-import {Routes, Route, Link} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import NavbarComponent from "./components/NavbarComponent/NavbarComponent"
 import HomePage from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
 import BeerPage from './pages/BeerPage';
 import ContactPage from './pages/ContactPage';
 import LoginPage from './pages/LoginPage';
+import CartPage from './pages/CartPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/beer" element={<BeerPage/>}/>
           <Route path="/contact" element={<ContactPage/>}/>
           <Route path="/login" element={<LoginPage/>}/>
+          <Route path="/cart" element={<CartPage/>}/>
         </Routes>
       </div>
     </div>
