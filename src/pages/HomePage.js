@@ -1,5 +1,4 @@
 import React from "react";
-import {  Container } from "react-bootstrap";
 import styled from "styled-components";
 import ProductComponent from "../components/ProductComponent/ProductComponent";
 
@@ -10,7 +9,7 @@ import cabare from "../img/cabare.jpeg"
 export default function HomePage() {
   return (
     <MainDiv style={{ backgroundImage: `url(${Bg})` }} className="p-2">
-      <Container>
+      <div className="align-items-center">
         <StyledH1 className="text-start mt-4 mb-4 text-dark">
           Destaques
         </StyledH1>
@@ -100,7 +99,7 @@ export default function HomePage() {
             price="7,00"
           />
         </div>
-      </Container>
+      </div>
     </MainDiv>
   );
 }
